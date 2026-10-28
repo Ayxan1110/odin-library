@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f1ea;
+  color: #2b2d42;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2b2d42;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ef8354;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+main {
+  padding: 30px 40px;
+}
+
+#empty-message {
+  color: #8d99ae;
+}
+
+#library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 6px solid #8d99ae;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-card.read {
+  border-left-color: #2a9d8f;
+}
+
+.book-card h3 {
+  margin-top: 0;
+}
+
+.book-card p {
+  margin: 6px 0;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.toggle-btn {
+  background-color: #2a9d8f;
+}
+
+.remove-btn {
+  background-color: #d62828;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 25px;
+  width: 320px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog h2 {
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#cancel-btn {
+  background-color: #8d99ae;
+}

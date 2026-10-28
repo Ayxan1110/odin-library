@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Library</h1>
+    <button id="new-book-btn">+ New Book</button>
+  </header>
+
+  <main>
+    <p id="empty-message">No books yet. Click "New Book" to add one.</p>
+    <div id="library"></div>
+  </main>
+
+  <dialog id="book-dialog">
+    <form id="book-form" method="dialog">
+      <h2>Add a new book</h2>
+
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" required>
+
+      <label for="pages">Pages</label>
+      <input type="number" id="pages" name="pages" min="1" required>
+
+      <label class="checkbox">
+        <input type="checkbox" id="read" name="read">
+        I have read this book
+      </label>
+
+      <div class="form-buttons">
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="submit">Add Book</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
